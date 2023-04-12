@@ -57,40 +57,35 @@ Switch ON the main switch
 Press the switches for inputs “A” and “B”. The switch is ON state when 1 is pressed. The switch is OFF state when 0 is pressed.
 If the output is 1, then the bulb glows.
 Check all the gates following the same procedure.
-##Program:
-```
-
+## Program:
+ 
 Program to verify the truth table in quartus for the basic logic gates using Verilog programming.
-Developed by: Karthikeyan S
-RegisterNumber:  21222050029
+Developed by: Karthikeyan
+RegisterNumber:  212222050029
 
-module logicgts(a,b,y1,y2,y3,y4,y5,y6,y7);
+```
+module experiment1(a,b,y1,y2,y3,y4,y5,y6,y7);
 input a,b;
 output y1,y2,y3,y4,y5,y6,y7;
-and(y1,a,b);
-or(y2,a,b);
-nor(y3,a);
-xor(y4,a,b);
-nand(y5,a,b);
-nor(y6,a,b);
+and (y1,a,b);
+or (y2,a,b);
+not (y3,a);
+xor (y4,a,b);
+nand (y5,a,b);
+nor (y6,a,b);
 xnor(y7,a,b);
 endmodule
 ```
 
+## Logic symbol & Truthtable:
+![231442307-0d0c22be-22e8-4cf3-a87d-c2c1a2db2cfe](https://user-images.githubusercontent.com/130553768/231465027-d5de1ebf-9945-4c13-9403-2b7a58bc6755.png)
 
-##Logic symbol & Truthtable:
-![image](https://user-images.githubusercontent.com/130553768/231463103-2de554ac-b2c2-4ad2-96fe-fd6e04f66857.png)
+## Output:
+## RTL realization:
+![231413841-e6d54a74-43d4-4e01-9750-7d2e72dcf4ae](https://user-images.githubusercontent.com/130553768/231465272-4d60c832-5409-40da-be59-b31891abba41.png)
 
-##Output:
-##RTL realization
-![231413841-e6d54a74-43d4-4e01-9750-7d2e72dcf4ae](https://user-images.githubusercontent.com/130553768/231459146-95fbea14-b2dd-4511-961a-5e98f10d65fa.png)
+## Timing Diagram:
+![231440258-b7db6dc3-8557-40af-97fa-8168ef41b6a3](https://user-images.githubusercontent.com/130553768/231465336-bb016b99-4f16-4947-b717-0e738f05cb50.png)
 
-##Timing Diagram:
-![231440258-b7db6dc3-8557-40af-97fa-8168ef41b6a3](https://user-images.githubusercontent.com/130553768/231459783-da9dc9e4-d249-4147-a728-da358f668f65.png)
-
-
-
-
-##Result:
-
-Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
+## Result:
+Thus the different digital IC’s are studied and the truth table for different logic gates are verified.
